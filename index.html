@@ -23,15 +23,15 @@
 
       <div id="pop-div">
           <button id="click-me-btn" v-on:click="popUp()">Click Me</button>
-          <transition name="pop-modal"> 
-          <div id="pop-up" v-if="pop">
-    
-                <div id="pop-content" >
+          <transition name="pop-up"> 
+          <div id="pop-up" v-show="pop">
+            <transition name="pop-modal">                         
+                <div id="pop-content" v-show="pop" >
                     <h3>Correct!</h3>
                     <p>Wow you are awesome!</p>
                     <button id="close-btn" v-on:click="pop = false">Close It</button>
                 </div>
-            
+            </transition>
           </div>   
         </transition>  
       </div>

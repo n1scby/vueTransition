@@ -62,9 +62,23 @@
   }     
 
   .pop-modal-enter-active, .pop-modal-leave-active {
-    transition: opacity 2000ms, transform 300ms ease-out;
+    transition: opacity 2000ms, transform 3000ms ease-out;
   }     
 
+  .pop-up-enter, .pop-up-leave-to {
+    opacity: 0;
+   
+    
+  }
+
+  .pop-up-enter-to, .pop-up-leave {
+    opacity: 1;
+   
+  }     
+
+  .pop-up-enter-active, .pop-up-leave-active {
+    transition: opacity 200ms;
+  }     
 
 
   
