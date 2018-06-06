@@ -1,0 +1,26 @@
+.menu-popover-enter, .menu-popover-leave-to {
+    opacity: 0;
+    transform: rotate(180deg);
+    
+  }
+
+  .menu-popover-enter-to, .menu-popover-leave {
+    opacity: 1;
+    transform: rotate(0deg);
+  }     
+
+  .menu-popover-enter-active, .menu-popover-leave-active {
+    transition: opacity 2000ms, transform 2000ms ease-out;
+  }     
+
+  .MenuPopover {
+      max-width: 50%;
+  }
+
+  #menu {
+      max-width: 25%;
+  }
+
+
+
+  
