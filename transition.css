@@ -15,11 +15,55 @@
 
   .MenuPopover {
       max-width: 50%;
+      background-color: lightblue;
   }
 
   #menu {
       max-width: 25%;
+      
   }
+
+  #pop-up {
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px 20px 30px;
+    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.02);
+    z-index: 10;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+   
+  }
+
+  #pop-content {
+    width: 300px;
+    max-width: 50%;
+    margin: 0px auto;
+    padding: 20px 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+   
+  
+  }
+  
+
+  .pop-modal-enter, .pop-modal-leave-to {
+    opacity: 0;
+    transform: rotate(180deg);
+    
+  }
+
+  .pop-modal-enter-to, .pop-modal-leave {
+    opacity: 1;
+    transform: rotate(0deg);
+  }     
+
+  .pop-modal-enter-active, .pop-modal-leave-active {
+    transition: opacity 2000ms, transform 300ms ease-out;
+  }     
 
 
 

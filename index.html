@@ -21,6 +21,21 @@
       </transition>
       </div>
 
+      <div id="pop-div">
+          <button id="click-me-btn" v-on:click="popUp()">Click Me</button>
+          <transition name="pop-modal"> 
+          <div id="pop-up" v-if="pop">
+    
+                <div id="pop-content" >
+                    <h3>Correct!</h3>
+                    <p>Wow you are awesome!</p>
+                    <button id="close-btn" v-on:click="pop = false">Close It</button>
+                </div>
+            
+          </div>   
+        </transition>  
+      </div>
+
     
 <!-- development version, includes helpful console warnings -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>   

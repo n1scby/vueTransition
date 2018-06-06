@@ -4,3 +4,17 @@ new Vue({
         showMenu: false
     }
 })
+
+new Vue({
+    el: '#pop-div',
+    data: {
+        pop: false
+      
+    },
+    methods: {
+        popUp() {
+            this.pop = true;
+            
+        }
+    }
+})
