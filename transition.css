@@ -20,7 +20,7 @@
 
   #menu {
       max-width: 25%;
-      
+       
   }
 
   #pop-up {
@@ -50,19 +50,23 @@
   }
   
 
-  .pop-modal-enter, .pop-modal-leave-to {
+  .pop-modal-enter, .pop-modal-leave-to, .bs-modal-enter, .bs-modal-leave-to {
     opacity: 0;
     transform: rotate(180deg);
     
   }
 
-  .pop-modal-enter-to, .pop-modal-leave {
+  .pop-modal-enter-to, .pop-modal-leave, .bs-modal-enter-to, .bs-modal-leave {
     opacity: 1;
     transform: rotate(0deg);
   }     
 
-  .pop-modal-enter-active, .pop-modal-leave-active {
+  .pop-modal-enter-active, .pop-modal-leave-active, .bs-modal-leave-active {
     transition: opacity 2000ms, transform 3000ms ease-out;
+  }     
+
+  .bs-modal-enter-active {
+    transition: opacity 200ms, transform 300ms ease-out;
   }     
 
   .pop-up-enter, .pop-up-leave-to {
@@ -79,6 +83,8 @@
   .pop-up-enter-active, .pop-up-leave-active {
     transition: opacity 200ms;
   }     
+
+
 
 
   
